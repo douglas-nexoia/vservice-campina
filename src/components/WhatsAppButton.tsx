@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const PHONE = "5583988889168";
+const PHONE = "5583988891689";
 const AGENT_NAME = "V Service";
 const DEFAULT_MESSAGE = "Olá! Vi o site da V Service Campina e gostaria de um orçamento para minha cozinha.";
 const NOTIFICATION_DELAY_MS = 6000;

@@ -30,14 +30,14 @@ const Navbar = () => {
               Dúvidas
             </a>
             <a
-              href="tel:+5583988889168"
+              href="tel:+5583988891689"
               className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium transition-colors"
             >
               <Phone size={16} />
-              <span>(83) 98888-9168</span>
+              <span>(83) 98889-1689</span>
             </a>
             <a
-              href="https://wa.me/5583988889168?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
+              href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20BD5A] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all hover:scale-105 shadow-lg shadow-green-500/20"
@@ -69,12 +69,12 @@ const Navbar = () => {
               <a href="#faq" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-white text-sm font-medium py-2">
                 Dúvidas
               </a>
-              <a href="tel:+5583988889168" className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium py-2">
+              <a href="tel:+5583988891689" className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium py-2">
                 <Phone size={16} />
-                <span>(83) 98888-9168</span>
+                <span>(83) 98889-1689</span>
               </a>
               <a
-                href="https://wa.me/5583988889168?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
+                href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#25D366] text-white px-5 py-2.5 rounded-full text-sm font-semibold text-center mt-2"

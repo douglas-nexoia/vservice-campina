@@ -76,7 +76,7 @@ const Services = () => {
               </ul>
 
               <a
-                href="https://wa.me/5583988889168?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20cozinha!"
+                href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20cozinha!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex items-center justify-center gap-2 w-full font-semibold text-sm py-3 rounded-xl transition-all ${
