@@ -9,13 +9,18 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <img
-              src="/vservice_logo.png"
-              alt="VService"
-              className="h-12 w-auto mb-4"
-            />
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/favicon.png"
+                alt="VSERVICE"
+                className="h-10 w-10 object-contain"
+              />
+              <span className="text-xl font-black tracking-wider text-white font-outfit uppercase">
+                VSERVICE
+              </span>
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Manutenção especializada e instalação de Coifas, Cooktops, Fornos e Fogões em Campina Grande e região.
+              Manutenção especializada e instalação de Coifas, Cooktops e Fornos em Campina Grande e região.
             </p>
           </div>
 

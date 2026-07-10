@@ -9,13 +9,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 shrink-0">
+          <a href="#" className="flex items-center gap-3 shrink-0">
             <img
-              src="/vservice_logo.png"
-              alt="VService"
-              className="h-10 md:h-12 w-auto object-contain"
+              src="/favicon.png"
+              alt="VSERVICE"
+              className="h-8 w-8 md:h-10 md:w-10 object-contain"
               fetchPriority="high"
             />
+            <span className="text-xl md:text-2xl font-black tracking-wider text-white font-outfit uppercase">
+              VSERVICE
+            </span>
           </a>
 
           {/* Desktop Nav */}
