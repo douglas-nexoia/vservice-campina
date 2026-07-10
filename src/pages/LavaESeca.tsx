@@ -81,7 +81,7 @@ const LavaESeca = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] lg:min-h-screen flex items-center bg-[#121212] overflow-hidden pt-24 pb-12 lg:pt-20 lg:pb-0">
+      <section className="relative min-h-[70vh] lg:min-h-screen flex items-center bg-[#121212] overflow-hidden pt-24 pb-8 lg:pt-20 lg:pb-0">
         <div className="absolute inset-0 bg-gradient-to-br from-[#121212] via-[#1C1C1C] to-[#121212]" />
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#FF6D00]/5 to-transparent" />
 
@@ -93,21 +93,21 @@ const LavaESeca = () => {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left content */}
             <div className="animate-fade-in-up">
-              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 mb-6">
+              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 mb-5 lg:mb-6">
                 <CheckCircle size={14} className="text-[#25D366]" />
                 <span className="text-xs font-medium text-gray-300">Assistência de Lava e Seca e Lava-Louças em Campina Grande</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+              <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4 lg:mb-6">
                 Instalação e Manutenção de <span className="gradient-text">Lava e Seca</span> e Lava-Louças
               </h1>
 
-              <p className="text-gray-400 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed">
+              <p className="text-gray-400 text-base sm:text-lg mb-6 lg:mb-8 max-w-lg leading-relaxed">
                 Especialistas em manutenção de máquinas Lava e Seca e Lava-Louças. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
               </p>
 
               {/* Brand badges */}
-              <div className="flex flex-wrap gap-3 mb-8">
+              <div className="flex flex-wrap gap-3 mb-6 lg:mb-8">
                 {['Samsung', 'LG', 'Midea', 'Electrolux', 'Brastemp'].map((brand) => (
                   <span
                     key={brand}
@@ -181,13 +181,13 @@ const LavaESeca = () => {
       <TrustBadges />
 
       {/* Services Section */}
-      <section id="servicos" className="pt-10 pb-20 bg-white">
+      <section id="servicos" className="pt-8 pb-12 sm:pt-10 sm:pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 lg:mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#121212] mb-4">
               Nossos <span className="gradient-text">Serviços</span>
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+            <p className="text-gray-500 max-w-2xl mx-auto text-base sm:text-lg">
               Reparo mecânico, manutenção eletrônica e preventiva de alto padrão para sua lavadora.
             </p>
           </div>
@@ -196,7 +196,7 @@ const LavaESeca = () => {
             {laundryServices.map((service) => (
               <div
                 key={service.title}
-                className={`relative rounded-2xl p-7 transition-all duration-300 hover:-translate-y-2 group ${
+                className={`relative rounded-2xl p-5 sm:p-7 transition-all duration-300 hover:-translate-y-2 group ${
                   service.highlight
                     ? 'bg-gradient-to-br from-[#121212] to-[#1E1E1E] text-white shadow-2xl shadow-neutral-900/20 ring-2 ring-[#FF6D00]/30'
                     : 'bg-[#F8F9FA] hover:bg-white hover:shadow-xl border border-gray-100'
@@ -252,13 +252,13 @@ const LavaESeca = () => {
       <Location />
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 bg-[#F8F9FA]">
+      <section id="faq" className="py-12 sm:py-20 bg-[#F8F9FA]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 lg:mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#121212] mb-4">
               Dúvidas <span className="gradient-text">Frequentes</span>
             </h2>
-            <p className="text-gray-500 text-lg">
+            <p className="text-gray-500 text-base sm:text-lg">
               Respostas rápidas para as dúvidas de conserto de Lava e Seca.
             </p>
           </div>
@@ -268,9 +268,9 @@ const LavaESeca = () => {
               <div key={index} className="bg-white rounded-2xl border border-gray-100 overflow-hidden transition-all">
                 <button
                   onClick={() => toggleFaq(index)}
-                  className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                  className="w-full px-4 py-4 sm:px-6 sm:py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
                 >
-                  <span className="font-bold text-[#121212] text-base sm:text-lg">{item.question}</span>
+                  <span className="font-bold text-[#121212] text-sm sm:text-lg pr-4">{item.question}</span>
                   <ChevronDown
                     size={20}
                     className={`text-[#FF6D00] transition-transform duration-300 ${
@@ -284,7 +284,7 @@ const LavaESeca = () => {
                     openIndex === index ? 'max-h-[300px] border-t border-gray-50' : 'max-h-0'
                   }`}
                 >
-                  <div className="p-6 text-gray-500 text-sm sm:text-base leading-relaxed">
+                  <div className="p-4 sm:p-6 text-gray-500 text-sm sm:text-base leading-relaxed">
                     {item.answer}
                   </div>
                 </div>
