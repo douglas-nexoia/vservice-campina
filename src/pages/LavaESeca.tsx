@@ -19,7 +19,7 @@ const laundryServices = [
   {
     emoji: '⚙️',
     title: 'Reparos Mecânicos',
-    description: 'Solução definitiva para barulhos fortes no centrifugamento, trepidação excessiva, vazamentos de água e falhas de travamento da porta.',
+    description: 'Solução definitiva para barulhos fortes no centrifugamento, trepidação excessiva, vazamentos de água e falhas de travamento da porta de sua Lava e Seca.',
     features: ['Troca de rolamento e retentor', 'Substituição de amortecedores', 'Troca de guarnição (borracha)', 'Reparo no trinco e trava de porta'],
     highlight: true,
   },
@@ -33,7 +33,7 @@ const laundryServices = [
   {
     emoji: '🧼',
     title: 'Higienização e Preventiva',
-    description: 'Limpeza interna profunda de dutos de secagem e cesto para eliminar fiapos, mau cheiro e restaurar a eficiência original de secagem.',
+    description: 'Limpeza interna profunda de dutos de secagem e cesto para eliminar fiapos, mau cheiro e restaurar a eficiência original de secagem de sua Lava e Seca.',
     features: ['Desobstrução do duto de secagem', 'Limpeza química do cesto', 'Desinfecção de mangueiras', 'Ajuste de calibração eletrônica'],
     highlight: false,
   },
@@ -45,16 +45,16 @@ const laundryFaq = [
     answer: 'Na maioria dos casos, o diagnóstico é feito no próprio local. Reparos mecânicos comuns ou troca de bombas de drenagem e válvulas são resolvidos em até 24h. Casos complexos de eletrônica de placa podem levar de 48h a 72h.',
   },
   {
-    question: 'Vocês atendem quais modelos de lavadoras?',
-    answer: 'Somos especializados em máquinas Lava e Seca (abertura frontal - Front Load) das marcas Samsung, LG e Midea, além de lavadoras convencionais (abertura superior - Top Load) da Brastemp, Electrolux e Consul.',
+    question: 'Vocês atendem quais modelos de Lava e Seca?',
+    answer: 'Somos especializados em máquinas Lava e Seca (abertura frontal - Front Load) das marcas Samsung, LG e Midea, além de modelos de embutir ou piso da Electrolux e Brastemp.',
   },
   {
     question: 'O que são os códigos de erro no painel da Lava e Seca?',
-    answer: 'Códigos como 4C/4E (falha de entrada de água), 5C/5E (falha de drenagem), dE/dE1 (erro na trava da porta) ou UE (desbalanceamento) são alertas do sistema. Nossos técnicos identificam a peça com defeito e realizam a substituição imediata.',
+    answer: 'Códigos como 4C/4E (falha de entrada de água), 5C/5E (falha de drenagem), dE/dE1 (erro na trava da porta) ou UE (desbalanceamento) são alertas do sistema. Nossos técnicos realizam o diagnóstico e a substituição das peças danificadas.',
   },
   {
     question: 'Como funciona a garantia do serviço?',
-    answer: 'Oferecemos garantia de 90 dias por escrito cobrindo tanto a mão de obra quanto as peças novas instaladas no conserto do seu eletrodoméstico.',
+    answer: 'Oferecemos garantia de 90 dias por escrito cobrindo tanto a mão de obra quanto as peças novas instaladas no conserto de sua Lava e Seca.',
   },
 ];
 
@@ -67,7 +67,7 @@ const LavaESeca = () => {
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Assistência técnica de Lava e Seca, máquina de lavar roupas e secadoras em Campina Grande. Técnicos especialistas em Samsung, LG e Midea. Peças originais e garantia de 90 dias."
+        "Instalação e manutenção de Lava e Seca em Campina Grande. Técnicos especialistas em Samsung, LG e Midea. Peças originais e garantia de 90 dias."
       );
     }
   }, []);
@@ -99,11 +99,11 @@ const LavaESeca = () => {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-                Instalação e Manutenção de <span className="gradient-text">Lava e Seca</span> e Lavadoras
+                Instalação e Manutenção de <span className="gradient-text">Lava e Seca</span>
               </h1>
 
               <p className="text-gray-400 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed">
-                Especialistas em conserto de lavadoras e máquinas de abertura frontal. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
+                Especialistas em manutenção de máquinas Lava e Seca. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
               </p>
 
               {/* Brand badges */}
@@ -143,7 +143,7 @@ const LavaESeca = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-tr from-[#FF6D00]/20 to-[#FFA726]/20 rounded-3xl blur-2xl" />
                 <img
-                  src="/serve_bem_hero.png"
+                  src="/vservice_laundry_hero.png"
                   alt="Instalação e Manutenção de Lava e Seca - Campina Grande"
                   className="relative rounded-3xl shadow-2xl w-full object-cover"
                   fetchPriority="high"
