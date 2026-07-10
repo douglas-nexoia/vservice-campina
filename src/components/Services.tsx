@@ -3,16 +3,16 @@ import { MessageCircle } from 'lucide-react';
 const services = [
   {
     emoji: '🔥',
-    title: 'Cooktops e Fogões',
-    description: 'Conserto e manutenção especializada em cooktops (a gás, elétricos e indução) e fogões das principais marcas nacionais e importadas.',
-    features: ['Reparo em cooktop por indução', 'Instalação e conversão de gás', 'Substituição de usinas e eletrodos', 'Troca de queimadores e registros'],
+    title: 'Cooktops',
+    description: 'Instalação e manutenção especializada em cooktops a gás, elétricos e por indução das principais marcas nacionais e importadas.',
+    features: ['Instalação e conversão de gás', 'Reparo em cooktop por indução', 'Substituição de vidro e painéis', 'Limpeza e desobstrução de injetores'],
     highlight: true,
   },
   {
     emoji: '🍞',
     title: 'Fornos e Micro-ondas',
-    description: 'Assistência técnica profissional para fornos de embutir (elétricos e a gás) e micro-ondas residenciais ou gourmet.',
-    features: ['Substituição de resistências', 'Conserto de placas de comando', 'Troca de termostatos e sensores', 'Troca de vidros e dobradiças'],
+    description: 'Instalação e manutenção profissional para fornos de embutir (elétricos e a gás) e micro-ondas residenciais ou gourmet.',
+    features: ['Substituição de resistências', 'Reparo de placas de comando', 'Troca de termostatos e sensores', 'Troca de vidros e dobradiças'],
     highlight: false,
   },
   {
@@ -26,7 +26,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="servicos" className="py-20 bg-white">
+    <section id="servicos" className="pt-10 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#121212] mb-4">

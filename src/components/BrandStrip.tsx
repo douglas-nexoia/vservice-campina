@@ -1,12 +1,13 @@
 const brands = [
-  { name: 'Brastemp', color: '#333333' },
-  { name: 'Electrolux', color: '#041E42' },
-  { name: 'Consul', color: '#555555' },
-  { name: 'Fischer', color: '#00639A' },
-  { name: 'Franke', color: '#333333' },
+  { name: 'Elettromec', color: '#111111' },
   { name: 'Tramontina', color: '#0054A6' },
+  { name: 'DeBacco', color: '#222222' },
+  { name: 'Evol', color: '#111111' },
+  { name: 'Fischer', color: '#00639A' },
   { name: 'Lofra', color: '#111111' },
   { name: 'Smeg', color: '#222222' },
+  { name: 'Brastemp', color: '#333333' },
+  { name: 'Electrolux', color: '#041E42' },
 ];
 
 const BrandStrip = () => {

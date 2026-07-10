@@ -1,10 +1,10 @@
 import { MessageCircle, CheckCircle } from 'lucide-react';
 
 const HeroSection = () => {
-  const badges = ['Brastemp', 'Electrolux', 'Fischer', 'Consul', 'Franke', 'Tramontina', 'Lofra', 'Smeg'];
+  const badges = ['Elettromec', 'Tramontina', 'DeBacco', 'Evol', 'Fischer', 'Lofra', 'Smeg', 'Brastemp', 'Electrolux'];
 
   return (
-    <section className="relative min-h-screen flex items-center bg-[#121212] overflow-hidden pt-20">
+    <section className="relative min-h-[80vh] lg:min-h-screen flex items-center bg-[#121212] overflow-hidden pt-24 pb-12 lg:pt-20 lg:pb-0">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#121212] via-[#1C1C1C] to-[#121212]" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#FF6D00]/5 to-transparent" />
@@ -24,7 +24,7 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Conserto de <span className="gradient-text">Cooktops, Fornos</span> e Coifas
+              Instalação e Manutenção de <span className="gradient-text">Cooktops, Fornos</span> e Coifas
             </h1>
 
             <p className="text-gray-400 text-lg sm:text-xl mb-8 max-w-lg leading-relaxed">
@@ -69,7 +69,7 @@ const HeroSection = () => {
               <div className="absolute -inset-4 bg-gradient-to-tr from-[#FF6D00]/20 to-[#FFA726]/20 rounded-3xl blur-2xl" />
               <img
                 src="/vservice_hero.png"
-                alt="V Service Assistência Técnica - Campina Grande"
+                alt="VService Assistência Técnica - Campina Grande"
                 className="relative rounded-3xl shadow-2xl w-full object-cover"
                 fetchPriority="high"
               />

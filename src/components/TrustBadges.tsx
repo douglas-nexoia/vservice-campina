@@ -29,14 +29,14 @@ const badges = [
 
 const TrustBadges = () => {
   return (
-    <section className="py-20 bg-[#F8F9FA]">
+    <section className="pt-16 pb-10 bg-[#F8F9FA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#121212] mb-4">
-            Por que escolher a <span className="gradient-text">V Service</span>?
+            Por que escolher a <span className="gradient-text whitespace-nowrap">VService</span>?
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg">
-            Compromisso com qualidade e confiança em cada reparo realizado.
+            Compromisso com qualidade e confiança em cada serviço realizado.
           </p>
         </div>
 

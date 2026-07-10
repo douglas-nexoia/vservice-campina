@@ -12,7 +12,7 @@ const Navbar = () => {
           <a href="#" className="flex items-center gap-2 shrink-0">
             <img
               src="/vservice_logo.png"
-              alt="V Service"
+              alt="VService"
               className="h-10 md:h-12 w-auto object-contain"
               fetchPriority="high"
             />

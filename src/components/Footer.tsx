@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <img
               src="/vservice_logo.png"
-              alt="V Service"
+              alt="VService"
               className="h-12 w-auto mb-4"
             />
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
@@ -67,7 +67,7 @@ const Footer = () => {
 
         <div className="border-t border-white/10 mt-10 pt-6 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-xs">
-            © {new Date().getFullYear()} V Service. Todos os direitos reservados.
+            © {new Date().getFullYear()} VService. Todos os direitos reservados.
           </p>
           <a
             href="https://eixodigitalbr.com.br/"
