@@ -10,6 +10,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/lava-e-seca" element={<LavaESeca />} />
         <Route path="/links" element={<Links />} />
+        <Route path="/link" element={<Links />} />
         <Route path="/instagram" element={<Links />} />
       </Routes>
     </BrowserRouter>
