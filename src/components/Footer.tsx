@@ -1,4 +1,4 @@
-import { MapPin, Phone, MessageCircle } from 'lucide-react';
+﻿import { MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const areas = ['Campina Grande', 'João Pessoa (Projetos)', 'Queimadas', 'Lagoa Seca'];
@@ -29,15 +29,15 @@ const Footer = () => {
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Contato</h4>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+5583988891689" className="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="tel:+5583991908583" className="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors">
                   <Phone size={16} />
-                  (83) 98889-1689
+                  (83) 99190-8583
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
+                  href="https://wa.me/5583991908583?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 hover:text-[#25D366] text-sm transition-colors"
@@ -90,3 +90,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

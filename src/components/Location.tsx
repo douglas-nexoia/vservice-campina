@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
+﻿import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
 
 const Location = () => {
   const hours = [
@@ -48,7 +48,7 @@ const Location = () => {
                 <div>
                   <h3 className="text-white font-bold text-lg mb-1">Telefone</h3>
                   <p className="text-gray-300">
-                    <a href="tel:+5583988891689" className="hover:text-white transition-colors">(83) 98889-1689</a>
+                    <a href="tel:+5583991908583" className="hover:text-white transition-colors">(83) 99190-8583</a>
                   </p>
                 </div>
               </div>
@@ -103,3 +103,4 @@ const Location = () => {
 };
 
 export default Location;
+

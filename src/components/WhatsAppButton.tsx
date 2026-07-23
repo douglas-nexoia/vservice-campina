@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const PHONE = "5583988891689";
+const PHONE = "5583991908583";
 const AGENT_NAME = "VService";
 const DEFAULT_MESSAGE = "Olá! Vi o site da VService Campina e gostaria de um orçamento para minha cozinha.";
 const NOTIFICATION_DELAY_MS = 6000;
@@ -131,3 +131,4 @@ const WhatsAppButton = () => {
 };
 
 export default WhatsAppButton;
+

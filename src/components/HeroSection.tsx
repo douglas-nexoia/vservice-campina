@@ -1,4 +1,4 @@
-import { MessageCircle, CheckCircle } from 'lucide-react';
+﻿import { MessageCircle, CheckCircle } from 'lucide-react';
 
 const HeroSection = () => {
   const badges = ['Elettromec', 'Tramontina', 'DeBacco', 'Evol', 'Fischer', 'Lofra', 'Smeg', 'Brastemp', 'Electrolux'];
@@ -46,7 +46,7 @@ const HeroSection = () => {
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
+                href="https://wa.me/5583991908583?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-lg px-8 py-4 rounded-2xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
@@ -55,10 +55,10 @@ const HeroSection = () => {
                 Solicitar Atendimento
               </a>
               <a
-                href="tel:+5583988891689"
+                href="tel:+5583991908583"
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold px-8 py-4 rounded-2xl transition-all"
               >
-                📞 (83) 98889-1689
+                📞 (83) 99190-8583
               </a>
             </div>
           </div>
@@ -82,3 +82,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+

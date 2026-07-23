@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Refrigerator, WashingMachine, Wind, Snowflake, Cpu, RefreshCw, Zap } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5516992301363?text=Olá! Vi o site de vocês e preciso de um orçamento para conserto.";
+const WHATSAPP_LINK = "https://wa.me/5583991908583?text=Olá! Vi o site de vocês e preciso de um orçamento para conserto.";
 
 const defaultServices = [
   {
@@ -152,3 +152,4 @@ const ServicesSection = ({ focusedService = "default" }: ServicesSectionProps) =
 };
 
 export default ServicesSection;
+

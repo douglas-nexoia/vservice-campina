@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   Refrigerator,
@@ -24,7 +24,7 @@ import heroComercialMd from "@/assets/hero-comercial-md.webp";
 import heroComercialSm from "@/assets/hero-comercial-sm.webp";
 
 const WHATSAPP_LINK =
-  "https://wa.me/5516992301363?text=Olá! Vi o site da Lavgel Franca e gostaria de um orçamento para refrigeração comercial.";
+  "https://wa.me/5583991908583?text=Olá! Vi o site da Lavgel Franca e gostaria de um orçamento para refrigeração comercial.";
 
 /* ─── Mini Header ─── */
 const ComercialHeader = () => {
@@ -206,7 +206,7 @@ const HeroComercial = () => {
               Chamar Técnico no WhatsApp
             </a>
             <a
-              href="tel:+5516992301363"
+              href="tel:+5583991908583"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-primary-foreground/30 text-primary-foreground font-semibold text-lg hover:bg-primary-foreground/10 transition-all"
             >
               <Phone size={20} />
@@ -384,11 +384,11 @@ const CtaSection = () => (
             Chamar Técnico no WhatsApp
           </a>
           <a
-            href="tel:+5516992301363"
+            href="tel:+5583991908583"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-border text-foreground font-semibold text-lg hover:bg-muted transition-all"
           >
             <Phone size={20} />
-            (16) 99230-1363
+            (83) 99190-8583
           </a>
         </div>
       </motion.div>
@@ -435,3 +435,4 @@ const Comercial = () => {
 };
 
 export default Comercial;
+

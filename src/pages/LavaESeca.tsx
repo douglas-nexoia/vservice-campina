@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import BrandStrip from '../components/BrandStrip';
 import TrustBadges from '../components/TrustBadges';
@@ -121,7 +121,7 @@ const LavaESeca = () => {
               {/* CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20para%20minha%20Lava%20e%20Seca!"
+                  href="https://wa.me/5583991908583?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20para%20minha%20Lava%20e%20Seca!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-lg px-8 py-4 rounded-2xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
@@ -130,10 +130,10 @@ const LavaESeca = () => {
                   Solicitar Atendimento
                 </a>
                 <a
-                  href="tel:+5583988891689"
+                  href="tel:+5583991908583"
                   className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold px-8 py-4 rounded-2xl transition-all"
                 >
-                  📞 (83) 98889-1689
+                  📞 (83) 99190-8583
                 </a>
               </div>
             </div>
@@ -231,7 +231,7 @@ const LavaESeca = () => {
                 </ul>
 
                 <a
-                  href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20Lava%20e%20Seca!"
+                  href="https://wa.me/5583991908583?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20Lava%20e%20Seca!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`inline-flex items-center justify-center gap-2 w-full font-semibold text-sm py-3 rounded-xl transition-all ${
@@ -301,3 +301,4 @@ const LavaESeca = () => {
 };
 
 export default LavaESeca;
+

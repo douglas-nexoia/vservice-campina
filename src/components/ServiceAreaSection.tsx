@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5516992301363?text=Olá! Gostaria de saber se vocês atendem na minha cidade.";
+const WHATSAPP_LINK = "https://wa.me/5583991908583?text=Olá! Gostaria de saber se vocês atendem na minha cidade.";
 
 const cities = ["Franca", "Ribeirão Preto", "Patrocínio Paulista", "Restinga", "Cristais Paulista"];
 
@@ -71,3 +71,4 @@ const ServiceAreaSection = () => (
 );
 
 export default ServiceAreaSection;
+

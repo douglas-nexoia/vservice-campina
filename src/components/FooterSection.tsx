@@ -1,4 +1,4 @@
-import { Instagram, Phone } from "lucide-react";
+﻿import { Instagram, Phone } from "lucide-react";
 import LavgelLogo from "./LavgelLogo";
 
 const footerLinks = [
@@ -42,7 +42,7 @@ const FooterSection = () => (
             <Instagram size={20} />
           </a>
           <a
-            href="tel:+5516992301363"
+            href="tel:+5583991908583"
             className="w-10 h-10 rounded-xl bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/70 hover:text-accent hover:bg-primary-foreground/20 transition-all"
             aria-label="Telefone"
           >
@@ -61,3 +61,4 @@ const FooterSection = () => (
 );
 
 export default FooterSection;
+
