@@ -1,4 +1,4 @@
-﻿import { Instagram, Phone } from "lucide-react";
+import { Instagram, Phone } from "lucide-react";
 import LavgelLogo from "./LavgelLogo";
 
 const footerLinks = [
@@ -51,10 +51,18 @@ const FooterSection = () => (
         </div>
       </div>
 
-      <div className="border-t border-primary-foreground/10 mt-8 pt-6 text-center">
+      <div className="border-t border-primary-foreground/10 mt-8 pt-6 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-primary-foreground/50 text-xs">
-          © 2026 Lavgel Service. Todos os direitos reservados.
+          © 2026 VService. Todos os direitos reservados.
         </p>
+        <a
+          href="https://eixodigitalbr.com.br/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-foreground/50 hover:text-primary-foreground/80 text-xs transition-colors opacity-70 hover:opacity-100"
+        >
+          Desenvolvido por Eixo Digital
+        </a>
       </div>
     </div>
   </footer>

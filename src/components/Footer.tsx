@@ -1,4 +1,4 @@
-﻿import { MapPin, Phone, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const areas = ['Campina Grande', 'João Pessoa (Projetos)', 'Queimadas', 'Lagoa Seca'];
@@ -78,8 +78,7 @@ const Footer = () => {
             href="https://eixodigitalbr.com.br/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: 'inherit', textDecoration: 'none', opacity: 0.6 }}
-            className="text-xs hover:opacity-100 transition-opacity"
+            className="text-gray-500 hover:text-gray-300 text-xs transition-colors opacity-70 hover:opacity-100"
           >
             Desenvolvido por Eixo Digital
           </a>

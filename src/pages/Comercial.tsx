@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   Refrigerator,
@@ -404,9 +404,17 @@ const ComercialFooter = () => (
         <LavgelLogo className="text-xl" />
       </div>
       <p className="text-sm text-primary-foreground/60 text-center">
-        © {new Date().getFullYear()} Lavgel Franca. Todos os direitos
+        © {new Date().getFullYear()} VService. Todos os direitos
         reservados.
       </p>
+      <a
+        href="https://eixodigitalbr.com.br/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-xs text-primary-foreground/50 hover:text-primary-foreground/80 transition-colors opacity-70 hover:opacity-100"
+      >
+        Desenvolvido por Eixo Digital
+      </a>
       <Link
         to="/"
         className="text-sm text-primary-foreground/80 hover:text-accent transition-colors flex items-center gap-1"
