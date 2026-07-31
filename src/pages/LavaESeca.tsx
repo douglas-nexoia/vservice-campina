@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import BrandStrip from '../components/BrandStrip';
 import TrustBadges from '../components/TrustBadges';
@@ -143,9 +143,13 @@ const LavaESeca = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-tr from-[#FF6D00]/20 to-[#FFA726]/20 rounded-3xl blur-2xl" />
                 <img
-                  src="/vservice_laundry_hero.png"
+                  src="/vservice_laundry_hero.webp"
+                  srcSet="/vservice_laundry_hero-sm.webp 640w, /vservice_laundry_hero.webp 1200w"
+                  sizes="(max-width: 640px) 640px, 1200px"
                   alt="Instalação e Manutenção de Lava e Seca - Campina Grande"
                   className="relative rounded-3xl shadow-2xl w-full object-cover"
+                  loading="eager"
+                  decoding="async"
                   fetchPriority="high"
                 />
               </div>

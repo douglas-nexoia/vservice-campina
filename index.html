@@ -2,11 +2,15 @@
 <html lang="pt-BR">
   <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NT293LSS');</script>
+    <script>
+      window.addEventListener('load', function() {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NT293LSS');
+      });
+    </script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,9 +21,13 @@
     <meta property="og:description" content="Especialistas em Cooktops, Fornos, Fogões e Coifas. Atendimento rápido e qualificado com peças originais e garantia." />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="preload" href="/fonts/Outfit-400.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high" />
+    <link rel="preload" href="/fonts/Outfit-600.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high" />
+    <link rel="preload" href="/fonts/Outfit-700.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high" />
+
+    <link rel="preload" href="/vservice_hero-sm.webp" as="image" type="image/webp" media="(max-width: 640px)" fetchpriority="high" />
+    <link rel="preload" href="/vservice_laundry_hero-sm.webp" as="image" type="image/webp" media="(max-width: 640px)" fetchpriority="high" />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->

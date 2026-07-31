@@ -1,4 +1,4 @@
-﻿import { MessageCircle, CheckCircle } from 'lucide-react';
+import { MessageCircle, CheckCircle } from 'lucide-react';
 
 const HeroSection = () => {
   const badges = ['Elettromec', 'Tramontina', 'DeBacco', 'Evol', 'Fischer', 'Lofra', 'Smeg', 'Brastemp', 'Electrolux'];
@@ -68,9 +68,13 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-tr from-[#FF6D00]/20 to-[#FFA726]/20 rounded-3xl blur-2xl" />
               <img
-                src="/vservice_hero.png"
+                src="/vservice_hero.webp"
+                srcSet="/vservice_hero-sm.webp 640w, /vservice_hero.webp 1200w"
+                sizes="(max-width: 640px) 640px, 1200px"
                 alt="VService Assistência Técnica - Campina Grande"
                 className="relative rounded-3xl shadow-2xl w-full object-cover"
+                loading="eager"
+                decoding="async"
                 fetchPriority="high"
               />
             </div>
