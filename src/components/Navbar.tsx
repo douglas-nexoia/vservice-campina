@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Phone, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
@@ -11,14 +11,11 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 shrink-0">
             <img
-              src="/favicon.png"
-              alt="VSERVICE"
-              className="h-8 w-8 md:h-10 md:w-10 object-contain"
+              src="/vservice_logo_new.jpg"
+              alt="VSERVICE - Reparos e Instalações"
+              className="h-10 w-auto md:h-12 object-contain rounded-lg"
               fetchPriority="high"
             />
-            <span className="text-xl md:text-2xl font-black tracking-wider text-white font-outfit uppercase">
-              VSERVICE
-            </span>
           </a>
 
           {/* Desktop Nav */}
@@ -40,12 +37,12 @@ const Navbar = () => {
               <span>(83) 99190-8583</span>
             </a>
             <a
-              href="https://wa.me/5583991908583?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
+              href="https://wa.me/5583991908583?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#25D366] hover:bg-[#20BD5A] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all hover:scale-105 shadow-lg shadow-green-500/20"
+              className="bg-[#25D366] hover:bg-[#20BD5A] text-white px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all hover:scale-105 shadow-lg shadow-green-500/20"
             >
-              WhatsApp
+              Chamar no WhatsApp
             </a>
           </div>
 
@@ -77,10 +74,10 @@ const Navbar = () => {
                 <span>(83) 99190-8583</span>
               </a>
               <a
-                href="https://wa.me/5583991908583?text=Ol%C3%A1%2C%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica%20para%20minha%20cozinha!"
+                href="https://wa.me/5583991908583?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#25D366] text-white px-5 py-2.5 rounded-full text-sm font-semibold text-center mt-2"
+                className="bg-[#25D366] text-white px-5 py-2.5 rounded-full text-sm font-bold text-center mt-2"
               >
                 Chamar no WhatsApp
               </a>

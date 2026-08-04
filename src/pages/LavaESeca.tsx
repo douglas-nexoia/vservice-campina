@@ -81,79 +81,85 @@ const LavaESeca = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] lg:min-h-screen flex items-center bg-[#121212] overflow-hidden pt-24 pb-8 lg:pt-20 lg:pb-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#121212] via-[#1C1C1C] to-[#121212]" />
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#FF6D00]/5 to-transparent" />
+      <section className="relative min-h-[85vh] flex items-center bg-[#121212] text-white overflow-hidden pt-24 pb-12 lg:pt-20 lg:pb-0">
+        {/* Background image - full-bleed seamless integration */}
+        <div className="absolute inset-0 z-0">
+          <picture>
+            <source media="(max-width: 640px)" srcSet="/vservice_laundry_hero-sm.webp" />
+            <img
+              src="/vservice_laundry_hero.webp"
+              alt="Manutenção de máquina lava e seca"
+              aria-hidden="true"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
+              className="w-full h-full object-cover object-center"
+            />
+          </picture>
+        </div>
 
-        {/* Decorative circles */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#FF6D00]/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#FFA726]/8 rounded-full blur-3xl" />
+        {/* Dark gradient overlay from left — Gellato/Lavgel style */}
+        <div
+          className="absolute inset-0 z-10"
+          style={{
+            background: `linear-gradient(to right, #0F0F0F 0%, rgba(15,15,15,0.95) 45%, rgba(15,15,15,0.75) 70%, rgba(15,15,15,0.35) 100%)`
+          }}
+        />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Left content */}
-            <div className="animate-fade-in-up">
-              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 rounded-full px-4 py-1.5 mb-5 lg:mb-6">
-                <CheckCircle size={14} className="text-[#25D366]" />
-                <span className="text-xs font-medium text-gray-300">Assistência de Lava e Seca e Lava-Louças em Campina Grande</span>
-              </div>
-
-              <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4 lg:mb-6">
-                Instalação e Manutenção de <span className="gradient-text">Lava e Seca</span> e Lava-Louças
-              </h1>
-
-              <p className="text-gray-400 text-base sm:text-lg mb-6 lg:mb-8 max-w-lg leading-relaxed">
-                Especialistas em manutenção de máquinas Lava e Seca e Lava-Louças. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
-              </p>
-
-              {/* Brand badges */}
-              <div className="flex flex-wrap gap-3 mb-6 lg:mb-8">
-                {['Samsung', 'LG', 'Midea', 'Electrolux', 'Brastemp'].map((brand) => (
-                  <span
-                    key={brand}
-                    className="bg-white/10 border border-white/15 text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-lg"
-                  >
-                    {brand}
-                  </span>
-                ))}
-              </div>
-
-              {/* CTA buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="https://wa.me/5583991908583?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20para%20minha%20Lava%20e%20Seca!"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold text-lg px-8 py-4 rounded-2xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
-                >
-                  <MessageCircle size={22} />
-                  Solicitar Atendimento
-                </a>
-                <a
-                  href="tel:+5583991908583"
-                  className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold px-8 py-4 rounded-2xl transition-all"
-                >
-                  📞 (83) 99190-8583
-                </a>
-              </div>
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="max-w-2xl">
+            {/* Specialist tag */}
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#25D366] opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#25D366]" />
+              </span>
+              <span className="text-xs font-semibold text-gray-200 uppercase tracking-wider">Atendimento Hoje em Campina Grande</span>
             </div>
 
-            {/* Right image */}
-            <div className="animate-slide-in-right delay-300 hidden lg:block">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-tr from-[#FF6D00]/20 to-[#FFA726]/20 rounded-3xl blur-2xl" />
-                <img
-                  src="/vservice_laundry_hero.webp"
-                  srcSet="/vservice_laundry_hero-sm.webp 640w, /vservice_laundry_hero.webp 1200w"
-                  sizes="(max-width: 640px) 640px, 1200px"
-                  alt="Instalação e Manutenção de Lava e Seca - Campina Grande"
-                  className="relative rounded-3xl shadow-2xl w-full object-cover"
-                  loading="eager"
-                  decoding="async"
-                  fetchPriority="high"
-                />
-              </div>
+            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+              Sua Lava e Seca Parou?{" "}
+              <span className="text-[#FF6A00] font-extrabold">Consertamos Hoje.</span>
+            </h1>
+
+            <p className="text-gray-300 text-base sm:text-lg mb-6 max-w-xl leading-relaxed">
+              Especialistas em manutenção de máquinas Lava e Seca e Lava-Louças. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
+            </p>
+
+            {/* Benefit badges — Scannability rápida em 0.5s */}
+            <div className="flex flex-wrap gap-3 mb-8 text-xs sm:text-sm font-semibold text-white">
+              <span className="inline-flex items-center gap-2 bg-white/10 px-3.5 py-2 rounded-xl border border-white/15 backdrop-blur-sm">
+                <CheckCircle size={16} className="text-[#FF6A00]" /> Garantia nos serviços
+              </span>
+              <span className="inline-flex items-center gap-2 bg-white/10 px-3.5 py-2 rounded-xl border border-white/15 backdrop-blur-sm">
+                <Clock size={16} className="text-[#FF6A00]" /> Atendimento no mesmo dia
+              </span>
+              <span className="inline-flex items-center gap-2 bg-white/10 px-3.5 py-2 rounded-xl border border-white/15 backdrop-blur-sm">
+                <ShieldCheck size={16} className="text-[#FF6A00]" /> Peças originais
+              </span>
             </div>
+
+            {/* CTA buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://wa.me/5583991908583?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20preciso%20de%20conserto%20para%20minha%20Lava%20e%20Seca."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-extrabold text-lg uppercase tracking-wide px-8 py-4 rounded-xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
+              >
+                <MessageCircle size={22} />
+                Chamar no WhatsApp
+              </a>
+              <a
+                href="tel:+5583991908583"
+                className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all backdrop-blur-sm"
+              >
+                📞 (83) 99190-8583
+              </a>
+            </div>
+            <p className="mt-4 flex items-center gap-2 text-sm text-gray-400">
+              <CheckCircle size={16} className="text-[#25D366]" /> Resposta em minutos. Sem compromisso.
+            </p>
           </div>
         </div>
       </section>
