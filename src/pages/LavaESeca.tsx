@@ -5,7 +5,7 @@ import TrustBadges from '../components/TrustBadges';
 import Location from '../components/Location';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
-import { MessageCircle, CheckCircle, ChevronDown } from 'lucide-react';
+import { MessageCircle, CheckCircle, ChevronDown, Clock, ShieldCheck } from 'lucide-react';
 
 const laundryBrands = [
   { name: 'Samsung', color: '#1428A0' },
