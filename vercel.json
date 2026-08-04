@@ -1,7 +1,39 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/lava-e-seca",
+      "destination": "/lava-e-seca.html"
+    },
+    {
+      "source": "/lava-e-seca/",
+      "destination": "/lava-e-seca.html"
+    },
+    {
+      "source": "/lava-loucas",
+      "destination": "/lava-loucas.html"
+    },
+    {
+      "source": "/lava-loucas/",
+      "destination": "/lava-loucas.html"
+    },
+    {
+      "source": "/lava-louca",
+      "destination": "/lava-loucas.html"
+    },
+    {
+      "source": "/lava-louca/",
+      "destination": "/lava-loucas.html"
+    },
+    {
+      "source": "/links",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/link",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/instagram",
       "destination": "/index.html"
     }
   ]
