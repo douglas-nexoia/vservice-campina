@@ -62,12 +62,12 @@ const LavaESeca = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = "VService | Instalação e Manutenção de Lava e Seca e Lava-Louças em Campina Grande";
+    document.title = "Conserto de Lavadoras e Lava e Seca em Campina Grande | VService";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Instalação e manutenção de Lava e Seca e Lava-Louças em Campina Grande. Técnicos especialistas em Samsung, LG, Midea, Electrolux e Brastemp. Garantia de 90 dias."
+        "Assistência técnica especializada em Lavadoras de Roupa e Lava e Seca em Campina Grande. Samsung, LG, Midea, Electrolux e Brastemp. Garantia de 90 dias com peças originais."
       );
     }
   }, []);
@@ -88,7 +88,7 @@ const LavaESeca = () => {
             <source media="(max-width: 640px)" srcSet="/vservice_laundry_hero-sm.webp" />
             <img
               src="/vservice_laundry_hero.webp"
-              alt="Manutenção de máquina lava e seca"
+              alt="Manutenção de máquina de lavar e lava e seca"
               aria-hidden="true"
               loading="eager"
               decoding="async"
@@ -118,12 +118,12 @@ const LavaESeca = () => {
             </div>
 
             <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Sua Lava e Seca Parou?{" "}
+              Sua Lavadora ou Lava e Seca Parou?{" "}
               <span className="text-[#FF6A00] font-extrabold">Consertamos Hoje.</span>
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg mb-6 max-w-xl leading-relaxed">
-              Especialistas em manutenção de máquinas Lava e Seca e Lava-Louças. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
+              Especialistas em manutenção de Lavadoras de Roupa e Lava e Seca. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
             </p>
 
             {/* Benefit badges — Scannability rápida em 0.5s */}

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import BrandStrip from '../components/BrandStrip';
@@ -9,6 +10,10 @@ import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Instalação e Conserto de Cooktops, Fornos e Coifas em Campina Grande | VService";
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navbar />

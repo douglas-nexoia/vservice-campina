@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Index from './pages/Index';
 import LavaESeca from './pages/LavaESeca';
+import LavaLoucas from './pages/LavaLoucas';
 import Links from './pages/Links';
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/lava-e-seca" element={<LavaESeca />} />
+        <Route path="/lava-loucas" element={<LavaLoucas />} />
+        <Route path="/lava-louca" element={<LavaLoucas />} />
         <Route path="/links" element={<Links />} />
         <Route path="/link" element={<Links />} />
         <Route path="/instagram" element={<Links />} />
