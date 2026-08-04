@@ -81,7 +81,7 @@ const LavaESeca = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center bg-[#121212] text-white overflow-hidden pt-24 pb-12 lg:pt-20 lg:pb-0">
+      <section className="relative min-h-[85vh] flex items-center bg-[#121212] text-white overflow-hidden pt-32 pb-16 lg:pt-36 lg:pb-16">
         {/* Background image - full-bleed seamless integration */}
         <div className="absolute inset-0 z-0">
           <picture>
@@ -102,7 +102,7 @@ const LavaESeca = () => {
         <div
           className="absolute inset-0 z-10"
           style={{
-            background: `linear-gradient(to right, #0F0F0F 0%, rgba(15,15,15,0.95) 45%, rgba(15,15,15,0.75) 70%, rgba(15,15,15,0.35) 100%)`
+            background: `linear-gradient(to right, #0F0F0F 0%, rgba(15,15,15,0.96) 45%, rgba(15,15,15,0.80) 70%, rgba(15,15,15,0.35) 100%)`
           }}
         />
 
@@ -157,8 +157,9 @@ const LavaESeca = () => {
                 📞 (83) 99190-8583
               </a>
             </div>
-            <p className="mt-4 flex items-center gap-2 text-sm text-gray-400">
-              <CheckCircle size={16} className="text-[#25D366]" /> Resposta em minutos. Sem compromisso.
+            <p className="mt-5 flex items-center gap-2 text-sm font-medium text-gray-300">
+              <CheckCircle size={16} className="text-[#25D366] flex-shrink-0" />
+              <span>Resposta em minutos. Sem compromisso.</span>
             </p>
           </div>
         </div>
