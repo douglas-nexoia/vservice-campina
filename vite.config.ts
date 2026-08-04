@@ -22,6 +22,11 @@ export default defineConfig(({ mode }) => ({
     target: "es2022",
     cssCodeSplit: true,
     rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+        "lava-e-seca": path.resolve(__dirname, "lava-e-seca.html"),
+        "lava-loucas": path.resolve(__dirname, "lava-loucas.html"),
+      },
       output: {
         manualChunks: {
           vendor: ["react", "react-dom", "react-router-dom"],
