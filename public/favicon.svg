@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#121212" />
+  <!-- Orange V -->
+  <path d="M16 22L42 78H58L84 22H67L50 58L33 22H16Z" fill="#FF6A00" />
+  <!-- Lightning Bolt -->
+  <path d="M52 32L38 58H50L46 78L62 52H50L54 32H52Z" fill="#FF6A00" />
+  <!-- Outer Plug Arc -->
+  <path d="M68 26C80 36 83 56 73 71C66 81 50 85 38 80" stroke="#E5E5E5" strokeWidth="7" strokeLinecap="round" fill="none" />
+  <rect x="65" y="16" width="6" height="12" rx="2" fill="#E5E5E5" transform="rotate(25 65 16)" />
+  <rect x="75" y="21" width="6" height="12" rx="2" fill="#E5E5E5" transform="rotate(25 75 21)" />
+</svg>
