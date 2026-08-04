@@ -9,6 +9,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/lava-e-seca" element={<LavaESeca />} />
+        <Route path="/lavadora" element={<LavaESeca />} />
+        <Route path="/lavadoras" element={<LavaESeca />} />
         <Route path="/links" element={<Links />} />
         <Route path="/link" element={<Links />} />
         <Route path="/instagram" element={<Links />} />
