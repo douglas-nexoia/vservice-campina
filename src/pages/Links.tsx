@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { MessageCircle, Flame, Droplet, MapPin, Instagram } from 'lucide-react';
+import { MessageCircle, Flame, Droplet, Sparkles, MapPin, Instagram } from 'lucide-react';
 
 const Links = () => {
   useEffect(() => {
@@ -91,7 +91,7 @@ const Links = () => {
                 <Droplet size={20} />
               </span>
               <div className="text-left">
-                <p className="text-sm font-medium opacity-75 uppercase tracking-wider">Linha de Lavagem</p>
+                <p className="text-sm font-medium opacity-75 uppercase tracking-wider">Máquinas de Lavar</p>
                 <p className="text-base font-extrabold text-gray-200 group-hover:text-white transition-colors">
                   Lava e Seca e Lavadoras
                 </p>
@@ -107,12 +107,12 @@ const Links = () => {
           >
             <div className="flex items-center gap-4">
               <span className="p-2.5 bg-cyan-500/20 text-cyan-400 rounded-xl">
-                <Droplet size={20} />
+                <Sparkles size={20} />
               </span>
               <div className="text-left">
                 <p className="text-sm font-medium opacity-75 uppercase tracking-wider">Lava-Louças</p>
                 <p className="text-base font-extrabold text-gray-200 group-hover:text-white transition-colors">
-                  Instalação e Conserto
+                  Instalação e Manutenção
                 </p>
               </div>
             </div>
