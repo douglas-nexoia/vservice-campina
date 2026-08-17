@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { MessageCircle, Flame, Droplet, Sparkles, MapPin, Instagram } from 'lucide-react';
+import { MessageCircle, Flame, Droplet, Sparkles, MapPin, Instagram, Zap } from 'lucide-react';
 
 const Links = () => {
   useEffect(() => {
@@ -113,6 +113,25 @@ const Links = () => {
                 <p className="text-sm font-medium opacity-75 uppercase tracking-wider">Lava-Louças</p>
                 <p className="text-base font-extrabold text-gray-200 group-hover:text-white transition-colors">
                   Instalação e Manutenção
+                </p>
+              </div>
+            </div>
+            <span className="text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-all">➔</span>
+          </a>
+
+          {/* Link 5: Microwaves & Ovens Page */}
+          <a
+            href="/microondas"
+            className="flex items-center justify-between w-full bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold p-5 rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:border-[#FF6A00]/40 active:scale-[0.98] group"
+          >
+            <div className="flex items-center gap-4">
+              <span className="p-2.5 bg-amber-500/20 text-amber-400 rounded-xl">
+                <Zap size={20} />
+              </span>
+              <div className="text-left">
+                <p className="text-sm font-medium opacity-75 uppercase tracking-wider">Micro-ondas & Fornos</p>
+                <p className="text-base font-extrabold text-gray-200 group-hover:text-white transition-colors">
+                  Conserto Rápido & Peças Originais
                 </p>
               </div>
             </div>

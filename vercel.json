@@ -25,6 +25,38 @@
       "destination": "/lava-loucas.html"
     },
     {
+      "source": "/microondas",
+      "destination": "/microondas.html"
+    },
+    {
+      "source": "/microondas/",
+      "destination": "/microondas.html"
+    },
+    {
+      "source": "/micro-ondas",
+      "destination": "/microondas.html"
+    },
+    {
+      "source": "/micro-ondas/",
+      "destination": "/microondas.html"
+    },
+    {
+      "source": "/forno-eletrico",
+      "destination": "/microondas.html"
+    },
+    {
+      "source": "/forno-eletrico/",
+      "destination": "/microondas.html"
+    },
+    {
+      "source": "/fornos-e-microondas",
+      "destination": "/microondas.html"
+    },
+    {
+      "source": "/fornos-e-microondas/",
+      "destination": "/microondas.html"
+    },
+    {
       "source": "/links",
       "destination": "/index.html"
     },

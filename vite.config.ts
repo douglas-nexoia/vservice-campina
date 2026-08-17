@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => ({
         main: path.resolve(__dirname, "index.html"),
         "lava-e-seca": path.resolve(__dirname, "lava-e-seca.html"),
         "lava-loucas": path.resolve(__dirname, "lava-loucas.html"),
+        microondas: path.resolve(__dirname, "microondas.html"),
       },
       output: {
         manualChunks: {
