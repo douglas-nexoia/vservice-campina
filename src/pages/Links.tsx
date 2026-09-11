@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { MessageCircle, Flame, Droplet, Sparkles, MapPin, Instagram, Zap, Building2 } from 'lucide-react';
 
 const Links = () => {
