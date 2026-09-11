@@ -12,3 +12,7 @@ Website oficial e landing pages estáticas de alta conversão da **VSERVICE** (A
 
 ## 🏷️ Rastreamento:
 - Container Google Tag Manager: `GTM-NT293LSS`
+
+---
+*Última atualização: 11/09/2026 — Ativação e sincronização da rota /coifas-comerciais*
+
