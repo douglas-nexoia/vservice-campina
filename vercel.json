@@ -25,36 +25,76 @@
       "destination": "/lava-loucas.html"
     },
     {
+      "source": "/coifas-comerciais",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/coifas-comerciais/",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/coifa-comercial",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/coifa-comercial/",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/coifas-industriais",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/coifas-industriais/",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/coifa-industrial",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/coifa-industrial/",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/comercial",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
+      "source": "/comercial/",
+      "destination": "/coifas-comerciais.html"
+    },
+    {
       "source": "/microondas",
-      "destination": "/microondas.html"
+      "destination": "/index.html"
     },
     {
       "source": "/microondas/",
-      "destination": "/microondas.html"
+      "destination": "/index.html"
     },
     {
       "source": "/micro-ondas",
-      "destination": "/microondas.html"
+      "destination": "/index.html"
     },
     {
       "source": "/micro-ondas/",
-      "destination": "/microondas.html"
+      "destination": "/index.html"
     },
     {
       "source": "/forno-eletrico",
-      "destination": "/microondas.html"
+      "destination": "/index.html"
     },
     {
       "source": "/forno-eletrico/",
-      "destination": "/microondas.html"
+      "destination": "/index.html"
     },
     {
       "source": "/fornos-e-microondas",
-      "destination": "/microondas.html"
+      "destination": "/index.html"
     },
     {
       "source": "/fornos-e-microondas/",
-      "destination": "/microondas.html"
+      "destination": "/index.html"
     },
     {
       "source": "/links",

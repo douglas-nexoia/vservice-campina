@@ -7,8 +7,8 @@ Website oficial e landing pages estáticas de alta conversão da **VSERVICE** (A
 - **`/`**: Cocção & Linha Quente (Cooktops, Fornos e Coifas)
 - **`/lava-e-seca`**: Lavagem & Cuidados (Máquinas de Lavar e Lava e Seca)
 - **`/lava-loucas`**: Lava-Louças (Embutir e Piso)
-- **`/microondas`**: Micro-ondas & Fornos Eléticos (Não esquenta, faíscas, magnetron e resistências)
-- **`/instagram`**: Bio Oficial do Instagram
+- **`/coifas-comerciais`**: Coifas Comerciais e Industriais (Restaurantes, Padarias, Hotéis e Cozinhas Profissionais)
+- **`/instagram`**: Bio Oficial do Instagram (Hub de Links)
 
 ## 🏷️ Rastreamento:
 - Container Google Tag Manager: `GTM-NT293LSS`
