@@ -22,6 +22,13 @@ import {
   Coffee,
   Sparkles
 } from 'lucide-react';
+import {
+  getWhatsAppUrl,
+  handleWhatsAppClick,
+  reportarConversaoTelefone,
+  TEL_LINK,
+  DISPLAY_PHONE,
+} from '../lib/conversions';
 
 const commercialSectors = [
   {
@@ -166,12 +173,9 @@ const CoifasComerciais = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const whatsappCommercialLink =
-    "https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20preciso%20de%20atendimento%20para%20coifa%2Fsistema%20de%20exaust%C3%A3o%20comercial.";
-
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
+      <Navbar service="coifasComerciais" />
 
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center bg-[#121212] text-white overflow-hidden pt-32 pb-16 lg:pt-36 lg:pb-16">
@@ -238,7 +242,11 @@ const CoifasComerciais = () => {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href={whatsappCommercialLink}
+                href={getWhatsAppUrl('coifasComerciais')}
+                onClick={(e) => {
+                  e.currentTarget.href = getWhatsAppUrl('coifasComerciais');
+                  handleWhatsAppClick('coifasComerciais');
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-extrabold text-lg uppercase tracking-wide px-8 py-4 rounded-xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
@@ -247,10 +255,11 @@ const CoifasComerciais = () => {
                 Solicitar Técnico Comercial
               </a>
               <a
-                href="tel:+5583988891689"
+                href={TEL_LINK}
+                onClick={reportarConversaoTelefone}
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all backdrop-blur-sm"
               >
-                📞 (83) 98889-1689
+                📞 {DISPLAY_PHONE}
               </a>
             </div>
 
@@ -375,7 +384,11 @@ const CoifasComerciais = () => {
                 Fale agora com o nosso plantão técnico comercial no WhatsApp. Atendimento prioritário e orçamento rápido.
               </p>
               <a
-                href={whatsappCommercialLink}
+                href={getWhatsAppUrl('coifasComerciais')}
+                onClick={(e) => {
+                  e.currentTarget.href = getWhatsAppUrl('coifasComerciais');
+                  handleWhatsAppClick('coifasComerciais');
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-extrabold text-lg uppercase tracking-wide px-8 py-4 rounded-xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
@@ -473,8 +486,8 @@ const CoifasComerciais = () => {
         </div>
       </section>
 
-      <Footer />
-      <WhatsAppFloat message="Ol%C3%A1!%20Vim%20pelo%20site%2C%20preciso%20de%20atendimento%20para%20coifa%2Fsistema%20de%20exaust%C3%A3o%20comercial." />
+      <Footer service="coifasComerciais" />
+      <WhatsAppFloat service="coifasComerciais" />
     </div>
   );
 };

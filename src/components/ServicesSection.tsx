@@ -1,7 +1,6 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Refrigerator, WashingMachine, Wind, Snowflake, Cpu, RefreshCw, Zap } from "lucide-react";
-
-const WHATSAPP_LINK = "https://wa.me/5583988891689?text=Olá! Vi o site de vocês e preciso de um orçamento para conserto.";
+import { getWhatsAppUrl, handleWhatsAppClick } from "@/lib/conversions";
 
 const defaultServices = [
   {
@@ -138,7 +137,11 @@ const ServicesSection = ({ focusedService = "default" }: ServicesSectionProps) =
 
         <div className="text-center mt-12">
           <a
-            href={WHATSAPP_LINK}
+            href={getWhatsAppUrl('home')}
+            onClick={(e) => {
+              e.currentTarget.href = getWhatsAppUrl('home');
+              handleWhatsAppClick('home');
+            }}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent text-accent-foreground font-bold text-lg hover:brightness-110 transition-all shadow-[var(--shadow-cta)]"

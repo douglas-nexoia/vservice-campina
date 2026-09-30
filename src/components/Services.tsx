@@ -1,4 +1,5 @@
-﻿import { MessageCircle } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
+import { getWhatsAppUrl, handleWhatsAppClick } from '../lib/conversions';
 
 const services = [
   {
@@ -76,7 +77,12 @@ const Services = () => {
               </ul>
 
               <a
-                href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20cozinha!"
+                href={getWhatsAppUrl('home', `Olá! Vim pelo site, gostaria de um atendimento para ${service.title.toLowerCase()}.`)}
+                onClick={(e) => {
+                  const customText = `Olá! Vim pelo site, gostaria de um atendimento para ${service.title.toLowerCase()}.`;
+                  e.currentTarget.href = getWhatsAppUrl('home', customText);
+                  handleWhatsAppClick('home', customText);
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex items-center justify-center gap-2 w-full font-semibold text-sm py-3 rounded-xl transition-all ${

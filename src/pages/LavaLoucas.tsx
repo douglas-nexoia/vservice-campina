@@ -6,6 +6,13 @@ import Location from '../components/Location';
 import Footer from '../components/Footer';
 import WhatsAppFloat from '../components/WhatsAppFloat';
 import { MessageCircle, CheckCircle, ChevronDown, Clock, ShieldCheck } from 'lucide-react';
+import {
+  getWhatsAppUrl,
+  handleWhatsAppClick,
+  reportarConversaoTelefone,
+  TEL_LINK,
+  DISPLAY_PHONE,
+} from '../lib/conversions';
 
 const dishwasherBrands = [
   { name: 'Brastemp', color: '#E30613' },
@@ -79,7 +86,7 @@ const LavaLoucas = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
+      <Navbar service="lavaLoucas" />
 
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center bg-[#121212] text-white overflow-hidden pt-32 pb-16 lg:pt-36 lg:pb-16">
@@ -144,7 +151,11 @@ const LavaLoucas = () => {
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20preciso%20de%20atendimento%20para%20minha%20Lava-Lou%C3%A7as."
+                href={getWhatsAppUrl('lavaLoucas')}
+                onClick={(e) => {
+                  e.currentTarget.href = getWhatsAppUrl('lavaLoucas');
+                  handleWhatsAppClick('lavaLoucas');
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-extrabold text-lg uppercase tracking-wide px-8 py-4 rounded-xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
@@ -153,10 +164,11 @@ const LavaLoucas = () => {
                 Chamar no WhatsApp
               </a>
               <a
-                href="tel:+5583988891689"
+                href={TEL_LINK}
+                onClick={reportarConversaoTelefone}
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all backdrop-blur-sm"
               >
-                📞 (83) 98889-1689
+                📞 {DISPLAY_PHONE}
               </a>
             </div>
             <p className="mt-5 flex items-center gap-2 text-sm font-medium text-gray-300">
@@ -225,7 +237,11 @@ const LavaLoucas = () => {
                 Fale agora com a nossa equipe no WhatsApp. Atendimento rápido e orçamento sem compromisso.
               </p>
               <a
-                href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20preciso%20de%20atendimento%20para%20minha%20Lava-Lou%C3%A7as."
+                href={getWhatsAppUrl('lavaLoucas')}
+                onClick={(e) => {
+                  e.currentTarget.href = getWhatsAppUrl('lavaLoucas');
+                  handleWhatsAppClick('lavaLoucas');
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-extrabold text-lg uppercase tracking-wide px-8 py-4 rounded-xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
@@ -280,8 +296,8 @@ const LavaLoucas = () => {
         </div>
       </section>
 
-      <Footer />
-      <WhatsAppFloat />
+      <Footer service="lavaLoucas" />
+      <WhatsAppFloat service="lavaLoucas" />
     </div>
   );
 };

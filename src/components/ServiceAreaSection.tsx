@@ -1,16 +1,15 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
+import { getWhatsAppUrl, handleWhatsAppClick } from "@/lib/conversions";
 
-const WHATSAPP_LINK = "https://wa.me/5583988891689?text=Olá! Gostaria de saber se vocês atendem na minha cidade.";
-
-const cities = ["Franca", "Ribeirão Preto", "Patrocínio Paulista", "Restinga", "Cristais Paulista"];
+const cities = ["Campina Grande", "Queimadas", "Lagoa Seca", "Massaranduba", "Puxinanã"];
 
 const ServiceAreaSection = () => (
   <section id="area-atendimento" className="py-20 md:py-28 bg-background">
     <div className="container">
       <div className="text-center mb-14">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">Onde Atendemos</h2>
-        <p className="text-muted-foreground text-lg">Franca e região — Interior de São Paulo</p>
+        <p className="text-muted-foreground text-lg">Campina Grande e Região Metropolitana — Paraíba</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -23,8 +22,8 @@ const ServiceAreaSection = () => (
           className="rounded-2xl overflow-hidden shadow-[var(--shadow-card)] border border-border aspect-[4/3]"
         >
           <iframe
-            title="Localização Lavgel Service Franca"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119849.94652050977!2d-47.45783615!3d-20.538918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a5ccba16d40d%3A0xc29ebb9e14e37c2b!2sFranca%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            title="Localização VService Campina Grande"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126668.61868311685!2d-35.95293237532397!3d-7.230713788285514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e2a05cfac79%3A0x6b6c230bc583f7a4!2sCampina%20Grande%2C%20PB!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -57,7 +56,11 @@ const ServiceAreaSection = () => (
             Não encontrou sua cidade? Entre em contato e consulte disponibilidade.
           </p>
           <a
-            href={WHATSAPP_LINK}
+            href={getWhatsAppUrl('home')}
+            onClick={(e) => {
+              e.currentTarget.href = getWhatsAppUrl('home');
+              handleWhatsAppClick('home');
+            }}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent text-accent-foreground font-bold text-lg hover:brightness-110 transition-all shadow-[var(--shadow-cta)]"

@@ -1,4 +1,5 @@
-﻿import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
+import { MapPin, Clock, Phone, Navigation } from 'lucide-react';
+import { TEL_LINK, DISPLAY_PHONE, reportarConversaoTelefone } from '../lib/conversions';
 
 const Location = () => {
   const hours = [
@@ -48,7 +49,13 @@ const Location = () => {
                 <div>
                   <h3 className="text-white font-bold text-lg mb-1">Telefone</h3>
                   <p className="text-gray-300">
-                    <a href="tel:+5583988891689" className="hover:text-white transition-colors">(83) 98889-1689</a>
+                    <a
+                      href={TEL_LINK}
+                      onClick={reportarConversaoTelefone}
+                      className="hover:text-white transition-colors"
+                    >
+                      {DISPLAY_PHONE}
+                    </a>
                   </p>
                 </div>
               </div>

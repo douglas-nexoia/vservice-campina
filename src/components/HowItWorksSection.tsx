@@ -1,7 +1,6 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { MessageCircle, CalendarCheck, Search, ShieldCheck } from "lucide-react";
-
-const WHATSAPP_LINK = "https://wa.me/5583988891689?text=Olá! Gostaria de agendar uma visita técnica.";
+import { getWhatsAppUrl, handleWhatsAppClick } from "@/lib/conversions";
 
 const steps = [
   { icon: MessageCircle, num: "1", title: "Nos Chame pelo WhatsApp", desc: "Descreva o problema do seu eletrodoméstico" },
@@ -48,7 +47,11 @@ const HowItWorksSection = () => (
 
       <div className="text-center mt-12">
         <a
-          href={WHATSAPP_LINK}
+          href={getWhatsAppUrl('home')}
+          onClick={(e) => {
+            e.currentTarget.href = getWhatsAppUrl('home');
+            handleWhatsAppClick('home');
+          }}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent text-accent-foreground font-bold text-lg hover:brightness-110 transition-all shadow-[var(--shadow-cta)]"

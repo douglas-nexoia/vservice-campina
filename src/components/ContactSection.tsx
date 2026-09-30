@@ -1,6 +1,7 @@
-﻿import { useState, FormEvent } from "react";
+import { useState, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Phone, Clock, Instagram } from "lucide-react";
+import { getWhatsAppUrl, handleWhatsAppClick, DISPLAY_PHONE } from "@/lib/conversions";
 
 const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -10,8 +11,9 @@ const ContactSection = () => {
     // Build WhatsApp message from form
     const form = e.target as HTMLFormElement;
     const data = new FormData(form);
-    const msg = `Olá! Preciso de um orçamento.\n\nNome: ${data.get("name")}\nTelefone: ${data.get("phone")}\nCidade/Bairro: ${data.get("location")}\nAparelho: ${data.get("appliance")}\nProblema: ${data.get("problem")}`;
-    window.open(`https://wa.me/5583988891689?text=${encodeURIComponent(msg)}`, "_blank");
+    const msg = `Olá! Vim pelo site, gostaria de um atendimento.\n\nNome: ${data.get("name")}\nTelefone: ${data.get("phone")}\nCidade/Bairro: ${data.get("location")}\nAparelho: ${data.get("appliance")}\nProblema: ${data.get("problem")}`;
+    handleWhatsAppClick('home', msg);
+    window.open(getWhatsAppUrl('home', msg), "_blank");
     setSubmitted(true);
   };
 
@@ -83,7 +85,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-semibold text-foreground">WhatsApp / Telefone</p>
-                <p className="text-muted-foreground">(83) 98889-1689</p>
+                <p className="text-muted-foreground">{DISPLAY_PHONE}</p>
               </div>
             </div>
 

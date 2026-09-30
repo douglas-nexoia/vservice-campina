@@ -1,6 +1,18 @@
 import { MapPin, Phone, MessageCircle } from 'lucide-react';
+import {
+  getWhatsAppUrl,
+  handleWhatsAppClick,
+  reportarConversaoTelefone,
+  DISPLAY_PHONE,
+  TEL_LINK,
+  ServiceType,
+} from '../lib/conversions';
 
-const Footer = () => {
+interface FooterProps {
+  service?: ServiceType;
+}
+
+const Footer: React.FC<FooterProps> = ({ service = 'home' }) => {
   const areas = ['Campina Grande', 'João Pessoa (Projetos)', 'Queimadas', 'Lagoa Seca'];
 
   return (
@@ -24,10 +36,10 @@ const Footer = () => {
                 </svg>
               </div>
               <div className="flex flex-col justify-center">
-                <span className="text-xl font-black tracking-wider text-white font-outfit uppercase leading-none">
+                <span className="text-2xl font-black tracking-wider text-white font-outfit uppercase leading-none">
                   VSERVICE
                 </span>
-                <span className="text-[9px] font-bold tracking-[0.16em] text-gray-300 uppercase leading-tight mt-1">
+                <span className="text-[10px] font-bold tracking-[0.16em] text-gray-300 uppercase leading-tight mt-1">
                   REPAROS • INSTALAÇÕES
                 </span>
               </div>
@@ -42,15 +54,23 @@ const Footer = () => {
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Contato</h4>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+5583988891689" className="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors">
+                <a
+                  href={TEL_LINK}
+                  onClick={reportarConversaoTelefone}
+                  className="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors"
+                >
                   <Phone size={16} />
-                  (83) 98889-1689
+                  {DISPLAY_PHONE}
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
+                  href={getWhatsAppUrl(service)}
+                  onClick={(e) => {
+                    e.currentTarget.href = getWhatsAppUrl(service);
+                    handleWhatsAppClick(service);
+                  }}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 hover:text-[#25D366] text-sm transition-colors"

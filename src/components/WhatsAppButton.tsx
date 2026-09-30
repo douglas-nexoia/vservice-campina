@@ -1,18 +1,19 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MessageCircle, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { getWhatsAppUrl, handleWhatsAppClick, ServiceType } from "../lib/conversions";
 
-const PHONE = "5583988891689";
+interface WhatsAppButtonProps {
+  service?: ServiceType;
+}
+
 const AGENT_NAME = "VService";
-const DEFAULT_MESSAGE = "Olá! Vi o site da VService Campina e gostaria de um orçamento para minha cozinha.";
 const NOTIFICATION_DELAY_MS = 6000;
 const NOTIFICATION_AUTOHIDE_MS = 12000;
 const WIGGLE_INTERVAL_MS = 15000;
 const SESSION_KEY = "wa_notified_v2";
 
-const WHATSAPP_URL = `https://wa.me/${PHONE}?text=${encodeURIComponent(DEFAULT_MESSAGE)}`;
-
-const WhatsAppButton = () => {
+const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ service = "home" }) => {
   const [showNotification, setShowNotification] = useState(false);
   const [unread, setUnread] = useState(0);
   const [wiggle, setWiggle] = useState(false);
@@ -73,10 +74,14 @@ const WhatsAppButton = () => {
             className="fixed bottom-28 right-6 z-50 max-w-[280px]"
           >
             <a
-              href={WHATSAPP_URL}
+              href={getWhatsAppUrl(service)}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={clearNotification}
+              onClick={(e) => {
+                e.currentTarget.href = getWhatsAppUrl(service);
+                handleWhatsAppClick(service);
+                clearNotification();
+              }}
               className="relative block w-full bg-card border border-border rounded-2xl rounded-br-sm shadow-xl px-4 py-3 pr-9 text-left hover:shadow-2xl hover:-translate-y-0.5 transition-all"
               aria-label="Abrir conversa no WhatsApp"
             >
@@ -103,12 +108,16 @@ const WhatsAppButton = () => {
         )}
       </AnimatePresence>
 
-      {/* Botão flutuante — link <a> para GTM capturar wa.me */}
+      {/* Botão flutuante */}
       <motion.a
-        href={WHATSAPP_URL}
+        href={getWhatsAppUrl(service)}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={clearNotification}
+        onClick={(e) => {
+          e.currentTarget.href = getWhatsAppUrl(service);
+          handleWhatsAppClick(service);
+          clearNotification();
+        }}
         animate={wiggle ? { rotate: [0, -10, 10, -8, 8, 0] } : { rotate: 0 }}
         transition={{ duration: 0.8 }}
         className="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-whatsapp flex items-center justify-center text-whatsapp-foreground shadow-[var(--shadow-whatsapp)] hover:scale-110 transition-transform animate-pulse-whatsapp"

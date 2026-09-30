@@ -1,7 +1,19 @@
 import { useState } from 'react';
 import { Phone, Menu, X } from 'lucide-react';
+import {
+  getWhatsAppUrl,
+  handleWhatsAppClick,
+  reportarConversaoTelefone,
+  DISPLAY_PHONE,
+  TEL_LINK,
+  ServiceType,
+} from '../lib/conversions';
 
-const Navbar = () => {
+interface NavbarProps {
+  service?: ServiceType;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ service = 'home' }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -44,14 +56,19 @@ const Navbar = () => {
               Dúvidas
             </a>
             <a
-              href="tel:+5583988891689"
+              href={TEL_LINK}
+              onClick={reportarConversaoTelefone}
               className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium transition-colors"
             >
               <Phone size={16} />
-              <span>(83) 98889-1689</span>
+              <span>{DISPLAY_PHONE}</span>
             </a>
             <a
-              href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
+              href={getWhatsAppUrl(service)}
+              onClick={(e) => {
+                e.currentTarget.href = getWhatsAppUrl(service);
+                handleWhatsAppClick(service);
+              }}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20BD5A] text-white px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all hover:scale-105 shadow-lg shadow-green-500/20"
@@ -83,12 +100,20 @@ const Navbar = () => {
               <a href="#faq" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-white text-sm font-medium py-2">
                 Dúvidas
               </a>
-              <a href="tel:+5583988891689" className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium py-2">
+              <a
+                href={TEL_LINK}
+                onClick={reportarConversaoTelefone}
+                className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium py-2"
+              >
                 <Phone size={16} />
-                <span>(83) 98889-1689</span>
+                <span>{DISPLAY_PHONE}</span>
               </a>
               <a
-                href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
+                href={getWhatsAppUrl(service)}
+                onClick={(e) => {
+                  e.currentTarget.href = getWhatsAppUrl(service);
+                  handleWhatsAppClick(service);
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#25D366] text-white px-5 py-2.5 rounded-full text-sm font-bold text-center mt-2"

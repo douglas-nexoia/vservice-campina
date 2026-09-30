@@ -1,4 +1,11 @@
 import { MessageCircle, CheckCircle, Clock, ShieldCheck } from 'lucide-react';
+import {
+  getWhatsAppUrl,
+  handleWhatsAppClick,
+  reportarConversaoTelefone,
+  DISPLAY_PHONE,
+  TEL_LINK,
+} from '../lib/conversions';
 
 const HeroSection = () => {
   return (
@@ -63,7 +70,11 @@ const HeroSection = () => {
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
+              href={getWhatsAppUrl('home')}
+              onClick={(e) => {
+                e.currentTarget.href = getWhatsAppUrl('home');
+                handleWhatsAppClick('home');
+              }}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-extrabold text-lg uppercase tracking-wide px-8 py-4 rounded-xl transition-all hover:scale-105 shadow-xl shadow-green-500/25"
@@ -72,10 +83,11 @@ const HeroSection = () => {
               Chamar no WhatsApp
             </a>
             <a
-              href="tel:+5583988891689"
+              href={TEL_LINK}
+              onClick={reportarConversaoTelefone}
               className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl transition-all backdrop-blur-sm"
             >
-              📞 (83) 98889-1689
+              📞 {DISPLAY_PHONE}
             </a>
           </div>
           <p className="mt-5 flex items-center gap-2 text-sm font-medium text-gray-300">
