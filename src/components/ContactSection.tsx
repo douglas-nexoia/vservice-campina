@@ -11,7 +11,7 @@ const ContactSection = () => {
     const form = e.target as HTMLFormElement;
     const data = new FormData(form);
     const msg = `Olá! Preciso de um orçamento.\n\nNome: ${data.get("name")}\nTelefone: ${data.get("phone")}\nCidade/Bairro: ${data.get("location")}\nAparelho: ${data.get("appliance")}\nProblema: ${data.get("problem")}`;
-    window.open(`https://wa.me/5583991908583?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://wa.me/5583988891689?text=${encodeURIComponent(msg)}`, "_blank");
     setSubmitted(true);
   };
 
@@ -83,7 +83,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="font-semibold text-foreground">WhatsApp / Telefone</p>
-                <p className="text-muted-foreground">(83) 99190-8583</p>
+                <p className="text-muted-foreground">(83) 98889-1689</p>
               </div>
             </div>
 

@@ -42,7 +42,7 @@ const FooterSection = () => (
             <Instagram size={20} />
           </a>
           <a
-            href="tel:+5583991908583"
+            href="tel:+5583988891689"
             className="w-10 h-10 rounded-xl bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/70 hover:text-accent hover:bg-primary-foreground/20 transition-all"
             aria-label="Telefone"
           >

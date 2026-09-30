@@ -42,15 +42,15 @@ const Footer = () => {
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Contato</h4>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+5583991908583" className="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors">
+                <a href="tel:+5583988891689" className="flex items-center gap-3 text-gray-400 hover:text-white text-sm transition-colors">
                   <Phone size={16} />
-                  (83) 99190-8583
+                  (83) 98889-1689
                 </a>
               </li>
 
               <li>
                 <a
-                  href="https://wa.me/5583991908583?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
+                  href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 hover:text-[#25D366] text-sm transition-colors"

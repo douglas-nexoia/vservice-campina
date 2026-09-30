@@ -45,7 +45,7 @@ const Links = () => {
         <div className="w-full space-y-4 animate-fade-in-up delay-200">
           {/* Link 1: WhatsApp */}
           <a
-            href="https://wa.me/5583991908583?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento!"
+            href="https://wa.me/5583988891689?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento!"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-between w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold p-5 rounded-2xl transition-all duration-300 hover:scale-[1.02] shadow-lg shadow-green-500/20 active:scale-[0.98] group"

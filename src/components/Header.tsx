@@ -2,7 +2,7 @@
 import { Phone, Menu, X } from "lucide-react";
 import LavgelLogo from "./LavgelLogo";
 
-const WHATSAPP_LINK = "https://wa.me/5583991908583?text=Olá! Vi o site da Lavgel Franca e gostaria de um orçamento.";
+const WHATSAPP_LINK = "https://wa.me/5583988891689?text=Olá! Vim pelo site da VService e gostaria de um orçamento.";
 
 const navLinks = [
   { label: "Serviços", href: "#servicos" },
@@ -37,11 +37,11 @@ const Header = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="tel:+5583991908583"
+            href="tel:+5583988891689"
             className="flex items-center gap-2 text-sm font-medium text-primary-foreground/80 hover:text-accent transition-colors"
           >
             <Phone size={16} />
-            <span>(83) 99190-8583</span>
+            <span>(83) 98889-1689</span>
           </a>
           <a
             href={WHATSAPP_LINK}
@@ -78,11 +78,11 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="tel:+5583991908583"
+              href="tel:+5583988891689"
               className="flex items-center gap-2 text-sm font-medium text-primary-foreground/80 py-2"
             >
               <Phone size={16} />
-              (83) 99190-8583
+              (83) 98889-1689
             </a>
             <a
               href={WHATSAPP_LINK}

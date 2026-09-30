@@ -1,7 +1,7 @@
 ﻿import { motion } from "framer-motion";
 import { MessageCircle, CalendarCheck, Search, ShieldCheck } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5583991908583?text=Olá! Gostaria de agendar uma visita técnica.";
+const WHATSAPP_LINK = "https://wa.me/5583988891689?text=Olá! Gostaria de agendar uma visita técnica.";
 
 const steps = [
   { icon: MessageCircle, num: "1", title: "Nos Chame pelo WhatsApp", desc: "Descreva o problema do seu eletrodoméstico" },

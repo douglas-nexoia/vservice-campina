@@ -44,14 +44,14 @@ const Navbar = () => {
               Dúvidas
             </a>
             <a
-              href="tel:+5583991908583"
+              href="tel:+5583988891689"
               className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium transition-colors"
             >
               <Phone size={16} />
-              <span>(83) 99190-8583</span>
+              <span>(83) 98889-1689</span>
             </a>
             <a
-              href="https://wa.me/5583991908583?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
+              href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20BD5A] text-white px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all hover:scale-105 shadow-lg shadow-green-500/20"
@@ -83,12 +83,12 @@ const Navbar = () => {
               <a href="#faq" onClick={() => setIsOpen(false)} className="text-gray-300 hover:text-white text-sm font-medium py-2">
                 Dúvidas
               </a>
-              <a href="tel:+5583991908583" className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium py-2">
+              <a href="tel:+5583988891689" className="flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium py-2">
                 <Phone size={16} />
-                <span>(83) 99190-8583</span>
+                <span>(83) 98889-1689</span>
               </a>
               <a
-                href="https://wa.me/5583991908583?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
+                href="https://wa.me/5583988891689?text=Ol%C3%A1!%20Vim%20pelo%20site%2C%20gostaria%20de%20um%20atendimento."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#25D366] text-white px-5 py-2.5 rounded-full text-sm font-bold text-center mt-2"
