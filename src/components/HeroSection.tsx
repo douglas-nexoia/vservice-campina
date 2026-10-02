@@ -46,7 +46,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-            Seu Cooktop ou Forno Parou?{" "}
+            Seu Cooktop Parou?{" "}
             <span className="text-[#FF6A00] font-extrabold">A Gente Resolve Hoje.</span>
           </h1>
 

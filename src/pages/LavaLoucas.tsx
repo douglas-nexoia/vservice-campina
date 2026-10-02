@@ -27,14 +27,14 @@ const dishwasherServices = [
   {
     emoji: '🍽️',
     title: 'Conserto de Lava-Louças',
-    description: 'Diagnóstico e reparo rápido para lava-louças de embutir ou piso. Solução de vazamentos, falha de aquecimento de água e erros de bomba.',
+    description: 'Diagnóstico e reparo rápido para lava-louças de embutir e piso. Solução de vazamentos, falha de aquecimento de água e erros de bomba.',
     features: ['Troca de bomba de circulação e drenagem', 'Substituição de resistências de aquecimento', 'Reparo de placas e sensores de nível', 'Troca de gaxetas e vedações de porta'],
     highlight: true,
   },
   {
     emoji: '🔌',
     title: 'Instalação Técnica de Lava-Louças',
-    description: 'Instalação profissional garantida para modelos de embutir em nichos de marcenaria ou modelos de piso, com conexões hidráulicas e elétricas seguras.',
+    description: 'Instalação profissional garantida para modelos de embutir em nichos de marcenaria e modelos de piso, com conexões hidráulicas e elétricas seguras.',
     features: ['Conexão hidráulica e ponto de esgoto', 'Ajuste de nivelação e fixação no nicho', 'Testes de estanqueidade e vazamentos', 'Orientações de primeiro uso e cuidados'],
     highlight: false,
   },
@@ -127,12 +127,12 @@ const LavaLoucas = () => {
             </div>
 
             <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Sua Lava-Louças Parou ou Precisa de Instalação?{" "}
+              Sua Lava-Louças Parou?{" "}
               <span className="text-[#FF6A00] font-extrabold">A Gente Resolve Hoje.</span>
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg mb-6 max-w-xl leading-relaxed">
-              Instalação técnica e conserto especializado de lava-louças de embutir ou piso. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
+              Instalação técnica e conserto especializado de lava-louças de embutir e piso. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
             </p>
 
             {/* Benefit badges — Scannability rápida em 0.5s */}
@@ -231,7 +231,7 @@ const LavaLoucas = () => {
           <div className="mt-16 bg-[#121212] rounded-3xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
             <div className="relative z-10 max-w-2xl mx-auto">
               <h3 className="text-2xl sm:text-3xl font-extrabold mb-4">
-                Precisa instalar ou consertar sua Lava-Louças?
+                Precisa Consertar sua Lava-Louças?
               </h3>
               <p className="text-gray-300 text-base mb-8">
                 Fale agora com a nossa equipe no WhatsApp. Atendimento rápido e orçamento sem compromisso.

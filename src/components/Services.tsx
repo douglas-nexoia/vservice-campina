@@ -1,25 +1,35 @@
 import { MessageCircle } from 'lucide-react';
-import { getWhatsAppUrl, handleWhatsAppClick } from '../lib/conversions';
+import { getWhatsAppUrl, handleWhatsAppClick, ServiceType } from '../lib/conversions';
 
-const services = [
+const services: {
+  emoji: string;
+  title: string;
+  serviceKey: ServiceType;
+  description: string;
+  features: string[];
+  highlight: boolean;
+}[] = [
   {
     emoji: '🔥',
     title: 'Cooktops',
+    serviceKey: 'cooktop',
     description: 'Instalação e manutenção especializada em cooktops a gás, elétricos e por indução das principais marcas nacionais e importadas.',
     features: ['Instalação e conversão de gás', 'Reparo em cooktop por indução', 'Substituição de vidro e painéis', 'Limpeza e desobstrução de injetores'],
     highlight: true,
   },
   {
     emoji: '🍞',
-    title: 'Fornos e Micro-ondas',
-    description: 'Instalação e manutenção profissional para fornos de embutir (elétricos e a gás) e micro-ondas residenciais ou gourmet.',
+    title: 'Fornos',
+    serviceKey: 'forno',
+    description: 'Instalação e manutenção profissional para fornos de embutir (elétricos e a gás) residenciais ou gourmet.',
     features: ['Substituição de resistências', 'Reparo de placas de comando', 'Troca de termostatos e sensores', 'Troca de vidros e dobradiças'],
     highlight: false,
   },
   {
     emoji: '💨',
-    title: 'Coifas e Depuradores',
-    description: 'Instalação, higienização e manutenção de coifas de ilha, parede e depuradores, garantindo a perfeita exaustão da sua cozinha.',
+    title: 'Coifas',
+    serviceKey: 'coifa',
+    description: 'Instalação, higienização e manutenção de coifas de ilha e parede, garantindo a perfeita exaustão da sua cozinha.',
     features: ['Instalação de dutos de exaustão', 'Substituição de motores', 'Troca de filtros de carvão ativo', 'Manutenção elétrica e fiação LED'],
     highlight: false,
   },
@@ -77,11 +87,10 @@ const Services = () => {
               </ul>
 
               <a
-                href={getWhatsAppUrl('home', `Olá! Vim pelo site, gostaria de um atendimento para ${service.title.toLowerCase()}.`)}
+                href={getWhatsAppUrl(service.serviceKey)}
                 onClick={(e) => {
-                  const customText = `Olá! Vim pelo site, gostaria de um atendimento para ${service.title.toLowerCase()}.`;
-                  e.currentTarget.href = getWhatsAppUrl('home', customText);
-                  handleWhatsAppClick('home', customText);
+                  e.currentTarget.href = getWhatsAppUrl(service.serviceKey);
+                  handleWhatsAppClick(service.serviceKey);
                 }}
                 target="_blank"
                 rel="noopener noreferrer"

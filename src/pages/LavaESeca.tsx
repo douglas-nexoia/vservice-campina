@@ -25,23 +25,23 @@ const laundryBrands = [
 const laundryServices = [
   {
     emoji: '⚙️',
-    title: 'Lava e Seca',
-    description: 'Manutenção corretiva e preventiva de máquinas Lava e Seca. Solução de barulho na centrifugação, erros de painel, placas e falhas de secagem.',
-    features: ['Troca de rolamento e retentor', 'Reparo de placa de potência', 'Substituição de sensores e trava', 'Desobstrução do duto de secar'],
+    title: 'Conserto & Mecânica',
+    description: 'Manutenção corretiva e preventiva de máquinas Lava e Seca. Solução de barulho na centrifugação, troca de bomba, rolamento e amortecedores.',
+    features: ['Troca de rolamento e retentor', 'Substituição de bomba de drenagem', 'Reparo de amortecedores e molas', 'Desobstrução do duto de secagem'],
     highlight: true,
   },
   {
-    emoji: '🍽️',
-    title: 'Lava-Louças',
-    description: 'Instalação e conserto de lava-louças de embutir ou piso. Soluções rápidas para vazamentos, falha de escoamento ou água que não aquece.',
-    features: ['Troca de bomba de circulação', 'Substituição de resistências', 'Reparo de vedações e mangueiras', 'Conserto de placas controladoras'],
+    emoji: '⚡',
+    title: 'Placas & Eletrônica',
+    description: 'Diagnóstico e reparo avançado em placas controladoras, módulos Inverter e sensores de temperatura e nível de água.',
+    features: ['Reparo em placas principais e Inverter', 'Substituição de travas de porta', 'Troca de sensores de secagem', 'Solução de códigos de erro no painel'],
     highlight: false,
   },
   {
     emoji: '🧼',
     title: 'Higienização Técnica',
-    description: 'Limpeza profunda de cestos, mangueiras e filtros para eliminar mau cheiro, fiapos acumulados e prolongar a vida útil dos seus aparelhos.',
-    features: ['Limpeza química de resíduos', 'Filtros e dutos desobstruídos', 'Prevenção de entupimentos', 'Calibração e testes de ciclo'],
+    description: 'Limpeza profunda interna do cesto, dutos e filtros para eliminar resíduos acumulados, mau cheiro e proteger as roupas.',
+    features: ['Limpeza técnica de dutos de ar', 'Desobstrução de mangueiras e filtros', 'Eliminação de fiapos e odores', 'Check-up e calibração de ciclos'],
     highlight: false,
   },
 ];
@@ -56,8 +56,8 @@ const laundryFaq = [
     answer: 'Somos especializados nas principais marcas do mercado de lavagem, como Samsung, LG, Midea, Electrolux e Brastemp, atendendo modelos nacionais e importados.',
   },
   {
-    question: 'Quais problemas comuns vocês resolvem em Lava-Louças?',
-    answer: 'Consertamos falhas de aquecimento da água (louça saindo molhada ou fria), vazamentos nas vedações da porta, água parada no fundo (problema de drenagem) e falhas no painel digital.',
+    question: 'Quais problemas comuns vocês resolvem em Lava e Seca?',
+    answer: 'Consertamos falhas no ciclo de secagem (roupa que sai úmida), barulho excessivo no rolamento ao centrifugar, água que não escoa (erro na bomba) e códigos de erro nas placas eletrônicas.',
   },
   {
     question: 'Como funciona a garantia do serviço?',
@@ -69,12 +69,12 @@ const LavaESeca = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = "Conserto de Lavadoras e Lava e Seca em Campina Grande | VService";
+    document.title = "Conserto de Lava e Seca em Campina Grande | VService";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Assistência técnica especializada em Lavadoras de Roupa e Lava e Seca em Campina Grande. Samsung, LG, Midea, Electrolux e Brastemp. Garantia de 90 dias com peças originais."
+        "Assistência técnica especializada em Lava e Seca em Campina Grande. Samsung, LG, Midea, Electrolux e Brastemp. Garantia de 90 dias com peças originais."
       );
     }
   }, []);
@@ -125,12 +125,12 @@ const LavaESeca = () => {
             </div>
 
             <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Sua Lavadora ou Lava e Seca Parou?{" "}
+              Sua Lava e Seca Parou?{" "}
               <span className="text-[#FF6A00] font-extrabold">Consertamos Hoje.</span>
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg mb-6 max-w-xl leading-relaxed">
-              Especialistas em manutenção de Lavadoras de Roupa e Lava e Seca. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
+              Especialistas em manutenção de Lava e Seca. Atendimento rápido no seu endereço em Campina Grande com garantia e peças originais.
             </p>
 
             {/* Benefit badges — Scannability rápida em 0.5s */}
@@ -254,11 +254,10 @@ const LavaESeca = () => {
                 </ul>
 
                 <a
-                  href={getWhatsAppUrl('lavaESeca', `Olá! Vim pelo site, gostaria de um orçamento para ${service.title}.`)}
+                  href={getWhatsAppUrl('lavaESeca')}
                   onClick={(e) => {
-                    const customMsg = `Olá! Vim pelo site, gostaria de um orçamento para ${service.title}.`;
-                    e.currentTarget.href = getWhatsAppUrl('lavaESeca', customMsg);
-                    handleWhatsAppClick('lavaESeca', customMsg);
+                    e.currentTarget.href = getWhatsAppUrl('lavaESeca');
+                    handleWhatsAppClick('lavaESeca');
                   }}
                   target="_blank"
                   rel="noopener noreferrer"

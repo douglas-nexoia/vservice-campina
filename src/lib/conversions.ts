@@ -28,14 +28,20 @@ export type ServiceType =
   | "lavaESeca"
   | "lavaLoucas"
   | "coifasComerciais"
+  | "cooktop"
+  | "forno"
+  | "coifa"
   | "geladeira";
 
 export const WHATSAPP_MESSAGES: Record<ServiceType, string> = {
-  home: "Olá! Vim pelo site, gostaria de um atendimento para cooktop, forno ou coifa com a VService.",
-  lavaESeca: "Olá! Vim pelo site, gostaria de um atendimento para conserto de Lava e Seca ou Lavadora com a VService.",
-  lavaLoucas: "Olá! Vim pelo site, gostaria de um atendimento para conserto de Lava-Louças com a VService.",
-  coifasComerciais: "Olá! Vim pelo site, gostaria de um atendimento para coifa ou sistema de exaustão comercial com a VService.",
-  geladeira: "Olá! Vim pelo site, gostaria de um atendimento para conserto de Geladeira ou Freezer com a VService.",
+  home: "Olá! Vim pelo site, gostaria de um atendimento.",
+  lavaESeca: "Olá! Vim pelo site, gostaria de um atendimento para minha Lava e Seca.",
+  lavaLoucas: "Olá! Vim pelo site, gostaria de um atendimento para minha Lava-Louças.",
+  coifasComerciais: "Olá! Vim pelo site, gostaria de um atendimento para Coifa Comercial.",
+  cooktop: "Olá! Vim pelo site, gostaria de um atendimento para meu Cooktop.",
+  forno: "Olá! Vim pelo site, gostaria de um atendimento para meu Forno.",
+  coifa: "Olá! Vim pelo site, gostaria de um atendimento para minha Coifa.",
+  geladeira: "Olá! Vim pelo site, gostaria de um atendimento para minha Geladeira.",
 };
 
 export const DEFAULT_WHATSAPP_MESSAGE = WHATSAPP_MESSAGES.home;

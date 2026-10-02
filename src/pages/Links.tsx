@@ -96,9 +96,9 @@ const Links = () => {
                 <Droplet size={20} />
               </span>
               <div className="text-left">
-                <p className="text-sm font-medium opacity-75 uppercase tracking-wider">Máquinas de Lavar</p>
+                <p className="text-sm font-medium opacity-75 uppercase tracking-wider">Lava e Seca</p>
                 <p className="text-base font-extrabold text-gray-200 group-hover:text-white transition-colors">
-                  Lava e Seca e Lavadoras
+                  Conserto e Manutenção
                 </p>
               </div>
             </div>
